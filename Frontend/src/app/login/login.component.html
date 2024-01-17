@@ -1,0 +1,57 @@
+
+<app-navbar></app-navbar>
+<br>
+<br>
+<br>
+<br>
+    <!-- content starts here -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class=" col-lg-6 col-md-12 content-div">
+                <h1 class="display-5" style="color: hsl(220, 24%, 15%); font-weight: bold;">Welcome to your <br>professional community. </h1>
+                <div class="form-input mt-4">
+                    <input class="form-control border-3" id="email" style="width: 70%;" 
+                    type="text" autocomplete="off" placeholder="Email or phone number" 
+                    aria-label="default input example" [(ngModel)]="titre">
+             
+                    <input class="form-control border-3 mt-2" id="password" style="width: 70%;" type="password" placeholder="Password"
+                        aria-label="default input example" [(ngModel)]="password">
+                    <p class="mt-2 forgot-pass">Forgot password?</p>
+                    <div>
+                        <button style="width: 70%;" type="button" (click)="onclick()"
+                            class="btn rounded-pill p-3">Sign
+                            in</button>
+                        <p>________________________________or_________________________________</p>
+                        <button style="width: 70%;" type="button"
+                            class="btn btn-light rounded-pill p-3 border border-dark sign-in">Sign in with Google</button>
+                        <button style="width: 70%;" type="button"
+                            class="btn btn-light mt-3 rounded-pill p-3 border border-dark">New to Internect? Join
+                            now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <img src="../../assets/images/home-banner.svg" width="700" height="560" class="homeImg" alt="home-banner">
+
+            </div>
+        </div>
+    </div>
+    <!-- people section starts here -->
+
+    <div class="container" id="people">
+        <div class="row">
+            <div class="col-lg-6 col-md-12  mt-5 first-column">
+                <h4 class="display-5" style="color: hsl(220, 24%, 15%); font-weight: bold;">Let the right people know <br> you’re open to work</h4>
+                <p class="display-5 people-custom">With the Open To Work feature, you can <br> privately tell recruiters
+                    or publicly share <br> with the LinkedIn community that you are looking for new job opportunities.
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-12 second-column">
+                <div class="ms-5">
+                    <img style="width: 75%;" src="../../assets/images/people-banner.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+<app-footer></app-footer>
